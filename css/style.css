@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f7;
+}
+
+.gallery img {
+  width: 70%;
+}

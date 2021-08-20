@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Store</title>
+    <!-- ---------------------------- Font awesome ----------------------------- -->
+    <script
+      src="https://kit.fontawesome.com/bb81d48018.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ------------------------ Bootstrap Stylesheet ------------------------- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- -------------------------------- Custom CSS Link --------------------------------- -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="row p-5 bg-white">
+          <div class="col-md-6 mt-5 p-0">
+            <div class="gallery text-center">
+              <h2>iMac <i class="fab fa-apple"></i></h2>
+              <a
+                href="https://www.apple.com/shop/buy-mac"
+                class="link-info text-decoration-none mx-auto d-block"
+              >
+                <img
+                  class="img-fluid rounded mx-auto d-block"
+                  src="images/mac.png"
+                  alt=""
+                />
+                <h5>View gallery</h5></a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 mt-5 p-0">
+            <!-- ------------------------ Section: specs-select ------------------------- -->
+            <section class="specs-selection">
+              <h1>Customize your Blue 24‑inch iMac with Apple M1 chip.</h1>
+              <p>
+                Apple M1 chip with 8-core CPU with 4 performance cores and 4
+                efficiency cores, 7-core GPU, and 16-core Neural Engine -16GB
+                unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports
+                Magic Mouse Magic Keyboard - US English
+              </p>
+              <hr />
+              <h5>Memory</h5>
+
+              <div
+                class="btn-group column grid gap-2 pt-1 pb-5"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="memory"
+                  id="btn-memory1"
+                  autocomplete="off"
+                />
+                <label
+                  id="memory1"
+                  class="btn btn-outline-dark"
+                  for="btn-memory1"
+                  >8GB unified memory</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="memory"
+                  id="btn-memory2"
+                  autocomplete="off"
+                />
+                <label
+                  id="memory2"
+                  class="btn btn-outline-dark"
+                  for="btn-memory2"
+                  >16GB unified memory</label
+                >
+              </div>
+              <h5>Storage</h5>
+
+              <div
+                class="btn-group column grid gap-2 pt-1 pb-5"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="storage"
+                  id="btn-storage1"
+                  autocomplete="off"
+                />
+                <label
+                  id="storage1"
+                  class="btn btn-outline-dark"
+                  for="btn-storage1"
+                  >256GB SSD storage</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="storage"
+                  id="btn-storage2"
+                  autocomplete="off"
+                />
+                <label
+                  id="storage2"
+                  class="btn btn-outline-dark"
+                  for="btn-storage2"
+                  >256GB SSD storage</label
+                >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="storage"
+                  id="btn-storage3"
+                  autocomplete="off"
+                />
+                <label
+                  id="storage3"
+                  class="btn btn-outline-dark"
+                  for="btn-storage3"
+                  >1TB SSD storage</label
+                >
+              </div>
+              <h5>Choose your delivery option</h5>
+
+              <div
+                class="btn-group column grid gap-2 pt-1 pb-5"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="delivery"
+                  id="btn-delivery1"
+                  autocomplete="off"
+                />
+                <label
+                  id="delivery1"
+                  class="btn btn-outline-dark"
+                  for="btn-delivery1"
+                  >Friday, Aug 15 prime delivery</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="delivery"
+                  id="btn-delivery2"
+                  autocomplete="off"
+                />
+                <label
+                  id="delivery2"
+                  class="btn btn-outline-dark"
+                  for="btn-delivery2"
+                  >Friday, Aug 21 delivery charge 20$</label
+                >
+              </div>
+            </section>
+
+            <!-- ------------------------ Section: price-chart ------------------------- -->
+
+            <section class="container-fluid price-chart mt-5">
+              <div class="row">
+                <div class="d-flex flex-wrap">
+                  <div class="col-md-8 col-sm-8 col-8">
+                    <h4>Best price</h4>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-4">
+                    <h4>$ <span>1299</span></h4>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                  <div class="col-md-8 col-sm-8 col-8">
+                    <h4>Extra memory cost</h4>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-4">
+                    <h4>$ <span id="memory-cost">0</span></h4>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                  <div class="col-md-8 col-sm-8 col-8">
+                    <h4>Extra storage cost</h4>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-4">
+                    <h4>$ <span id="storage-cost">0</span></h4>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                  <div class="col-md-8 col-sm-8 col-8">
+                    <h4>Delivery charge</h4>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-4">
+                    <h4>$ <span id="delivery-cost">0</span></h4>
+                  </div>
+                </div>
+                <hr />
+                <div class="d-flex flex-wrap">
+                  <div class="col-md-8 col-sm-8 col-8">
+                    <h4>Total Price:</h4>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-4">
+                    <h4>$ <span>1299</span></h4>
+                  </div>
+                </div>
+              </div>
+              <div class="promo-coupon mt-2">
+                <h5>Promo Code</h5>
+
+                <div class="input-group my-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Promo Code"
+                    aria-label="Enter Promo Code"
+                    aria-describedby="button-addon"
+                  />
+                  <button
+                    class="btn btn-outline-danger"
+                    type="button"
+                    id="button-addon"
+                  >
+                    APPLY
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <hr />
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------ Section: Grand-Total ------------------------- -->
+
+      <section class="container">
+        <hr />
+        <div class="text-center">
+          <h1>Grand Total: $ <span>1299</span></h1>
+        </div>
+      </section>
+    </main>
+    <!-- ------------------------ Bootstrap javaScript ------------------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ------------------------ Custom javaScript ------------------------- -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
