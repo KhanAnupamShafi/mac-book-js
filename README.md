@@ -1,8 +1,8 @@
-# honda-cbr-assignment
+# mac-book-pro
 
-### [Assignment Netlify Live Link](https://hondacbr-2021.netlify.app/)
+### [Assignment Netlify Live Link](https://mac-book-pro-anupam.netlify.app/)
 
-#### This is the link: https://hondacbr-2021.netlify.app/
+#### This is the link: https://mac-book-pro-anupam.netlify.app/
 
 ## 👩‍💻 Languages Used
 
