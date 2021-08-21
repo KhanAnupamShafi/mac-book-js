@@ -48,7 +48,7 @@ function calculateTotal() {
   document.getElementById("promo-btn").addEventListener("click", function () {
     if (promoCode.value == "stevekaku") {
       const totalDiscount = (extraCost + basePrice) / 5;
-      grandTotal.innerText = extraCost + basePrice - totalDiscount;
+      grandTotal.innerText = (extraCost + basePrice - totalDiscount).toFixed(2);
     } else console.log("try again!");
     promoCode.value = ""; //clear input field
   });
@@ -95,7 +95,7 @@ document.getElementById("promo-btn").addEventListener("click", function () {
 
   if (promoCode.value == "stevekaku") {
     const totalDiscount = totalPrice / 5;
-    grandTotal.innerText = totalPrice - totalDiscount;
+    grandTotal.innerText = (totalPrice - totalDiscount).toFixed(2);
   } else console.log("try again !");
   promoCode.value = ""; //clear input field
 });

@@ -1,11 +1,21 @@
+/* ------------------------------- font import ------------------------------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ------------------------------ default style ----------------------------- */
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #f5f5f7;
+  font-family: "Poppins", sans-serif;
 }
 
+/* ------------------------------ custom style ------------------------------ */
 .gallery img {
   width: 70%;
+}
+
+hr.end-line {
+  margin-bottom: 80px;
 }
