@@ -35,7 +35,23 @@ function calculateTotal() {
 
   //update html
 
-  document.getElementById("total-cost").innerText = extraCost + basePrice;
+  const totalCost = document.getElementById("total-cost");
+
+  totalCost.innerText = extraCost + basePrice;
+
+  //promo code applying after selecting specs
+
+  const promoCode = document.getElementById("promo-code");
+  const grandTotal = document.getElementById("grand-total");
+  grandTotal.innerText = extraCost + basePrice;
+
+  document.getElementById("promo-btn").addEventListener("click", function () {
+    if (promoCode.value == "stevekaku") {
+      const totalDiscount = (extraCost + basePrice) / 5;
+      grandTotal.innerText = extraCost + basePrice - totalDiscount;
+    } else console.log("try again!");
+    promoCode.value = ""; //clear input field
+  });
 }
 
 //Memory cost event
@@ -67,4 +83,19 @@ document.getElementById("btn-delivery1").addEventListener("click", function () {
 
 document.getElementById("btn-delivery2").addEventListener("click", function () {
   updatePrice("delivery", "option20");
+});
+
+document.getElementById("promo-btn").addEventListener("click", function () {
+  const totalPrice = document.getElementById("total-cost").innerText;
+
+  //promo code applying for default / best price
+
+  const promoCode = document.getElementById("promo-code");
+  const grandTotal = document.getElementById("grand-total");
+
+  if (promoCode.value == "stevekaku") {
+    const totalDiscount = totalPrice / 5;
+    grandTotal.innerText = totalPrice - totalDiscount;
+  } else console.log("try again !");
+  promoCode.value = ""; //clear input field
 });
